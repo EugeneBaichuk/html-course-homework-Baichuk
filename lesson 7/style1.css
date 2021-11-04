@@ -23,35 +23,29 @@ p + h2 {
    font-size: 40px;
 }
 
-ul+h2 {
+ul + h2 {
   color: blue;
   font-size: 40px;
 }
 
 span {
-  font-size: 30px;
   font-weight:bold;
 }
 
-ol li  {
+li {
   font-size: 30px;
+}
+
+span + ol li  {
   color: gray;
 }
 
-
-
-p + h2 + ul > li + li li {
-  color:red;
-}
-
-ul+h2 + ul > li li  {
+ul ~ ul > li li{
   color: green;
-  font-size: 40px;
 }
 
-ul+h2+ul>li + li li {
+ul > li ~ li li {
   color: red;
-  font-size: 40px;
 }
 
 table {
@@ -81,17 +75,17 @@ tr > td[colspan] + tr {
 background-color:white;
 }
 
-tr~tr {
+tr ~ tr {
   font-weight: bold;
 }
 
-tr~tr~tr {
+tr ~ tr ~ tr {
   font-weight: normal;
   color: orange;
   text-align: left;
 }
 
-tr~tr~tr > td~td {
+tr ~ tr ~ tr > td ~ td {
   font-weight: normal;
   background-color: green;
   color: white;

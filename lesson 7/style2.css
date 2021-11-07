@@ -1,0 +1,16 @@
+div {
+  font-size: 30px;
+}
+
+.orange-link {
+color: #f70;
+}
+
+.grey-link {
+  color: #666;
+}
+
+.utf {
+  text-decoration: none;
+  writing-mode:sideways-rl;
+}

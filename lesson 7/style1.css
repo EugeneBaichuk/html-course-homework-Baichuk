@@ -1,0 +1,93 @@
+h1 {
+  text-align: right;
+  color: orange;
+  font-size: 40px; 
+}
+
+p {
+  font-size: 30px;
+}
+
+p:first-letter {
+ font-size: 60px;
+ color: red;
+}
+
+p em {
+  background-color: green;
+  color: white;
+}
+
+p + h2 {
+   color: orange;
+   font-size: 40px;
+}
+
+ul + h2 {
+  color: blue;
+  font-size: 40px;
+}
+
+span {
+  font-weight:bold;
+}
+
+li {
+  font-size: 30px;
+}
+
+span + ol li  {
+  color: gray;
+}
+
+ul ~ ul > li li{
+  color: green;
+}
+
+ul > li ~ li li {
+  color: red;
+}
+
+table {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+td {
+  border: 1px solid black;
+}
+
+td[rowspan] {
+  background-color:white;
+  color: black; 
+  font-weight: bold;
+}
+
+td[colspan] {
+  background-color:white;
+  color: black;
+  vertical-align: center;
+  font-weight: bold;
+}
+
+tr > td[colspan] + tr {
+background-color:white;
+}
+
+tr ~ tr {
+  font-weight: bold;
+}
+
+tr ~ tr ~ tr {
+  font-weight: normal;
+  color: orange;
+  text-align: left;
+}
+
+tr ~ tr ~ tr > td ~ td {
+  font-weight: normal;
+  background-color: green;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+div {
+  margin-top: 25px;
+}
+
+input,
+input#red:checked ~ span.red,
+input#green:checked ~ span.green,
+input#blue:checked ~ span.blue {
+  display: none;
+}
+
+label[for="red"] {
+  color: red;
+}
+
+label[for="green"] {
+  color: green;
+}
+
+label[for="blue"] {
+  color: blue;
+}
+
+input#red:checked ~ label[for="red"] {
+  color: rgba(255, 0, 0, 0.2);
+}
+
+input#green:checked ~ label[for="green"] {
+  color: rgba(34, 136, 34, 0.2);
+}
+
+input#blue:checked ~ label[for="blue"] {
+  color: rgba(0, 0, 255, 0.2);
+}
+
+label {
+  text-decoration: underline;
+  padding: 0 40px 0 20px;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.red, .blue, .green {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 11px;
+  border-radius: 12px;
+  color:white;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}

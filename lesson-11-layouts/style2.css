@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: #3170A8;
+  text-align: center;
+  margin-top: 51px;
+  font-size: 38px;
+  font-weight: 400;
+}
+
+h1 > span {
+  color: #EE8129;
+}
+
+.cards-position{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 260px;
+}
+
+.comments-card-1, 
+.comments-card-2 {
+  margin: 44px auto;
+  font-size: 0;
+}
+
+.comments-card-1 > div,
+.comments-card-2 > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+img {
+  width: 100px;
+}
+
+.comments-card-1 .rect,
+.comments-card-2 .rect {
+  width: 10px;
+  border: 13px solid;
+  border-color: transparent white transparent transparent;
+  display: inline;
+  line-height: 100px;
+}
+
+.text-field {
+  background-color: white;
+  width: 362px;
+  font-size: 12px;
+  padding: 15px 12px 11px;
+  height: fit-content;
+}
+
+h3:last-child {
+  padding: 8px 0 0 0;
+  border-top: 2px black dotted;
+  color: #7F7F7F;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.text-field .customer {
+  display: inline-block;
+  padding-bottom: 7px;
+  font-style: italic;
+  color: #588BB8;
+}
+
+.text-field .status {
+  float: right;
+}

@@ -1,0 +1,20 @@
+table {
+  border-collapse: collapse;
+  border: 1px white;
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #ced0d1;
+  padding: 9px;
+  text-align: center;
+  font-size: 25px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddebf8;
+}
+
+td:nth-child(2n+3) {
+  background-color: #f2f2dd;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      padding: 0 30%;
+    }
+
+    .personal-info div {
+      padding: 0 0 1rem;
+    }
+
+    .personal-info :last-child {
+      padding: 0;
+    }
+    
+    fieldset {
+      margin: 0 0 1rem;
+    }
+
+    textarea {
+      max-width: 30rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Sign up to the app</h2>
+
+    <form>
+      <fieldset class="personal-info">
+        <legend>Personal information:</legend>
+        <p>
+          <label>First name<br><input type="text" name="First name" value="Mickey"></label>
+        </p>
+        <p>
+          <label>Last name<br><input type="text" name="Last name" value="Mouse" ></label>
+        </p>
+        <p>
+          <label>Self-presentation:<br>
+            <textarea name="Self-presentation" cols="30" rows="10" placeholder="The cat was playing in the garden"></textarea>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Car info (the brand):</legend>
+        <p>
+          <select name="CarInfo" >
+          <option value="Volvo">Volvo</option>
+          <option value="Saab">Saab</option>
+          <option value="Fiat">Fiat</option>
+          <option value="Audi">Audi</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Choose one:</legend>
+        <p>
+          <label><input type="radio" name="Gender" value="Male">Male</label>
+        </p>
+        <p>
+          <label><input type="radio" name="Gender" value="Female">Female</label>
+        </p>
+        <p>
+          <label><input type="radio" name="Gender" value="Other">Other</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Choose many:</legend>
+        <p>
+          <label><input type="checkbox" name="Transport" value="Bike">I have a bike</label>
+        </p>
+        <p>
+          <input type="checkbox" name="Transport" value="Car">I have a car</label>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Submit">
+        <button type="button">Cancel</button>
+      </p>
+    </form>
+  </div>
+</body>
+</html>

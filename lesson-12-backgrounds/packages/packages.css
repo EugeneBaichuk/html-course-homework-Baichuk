@@ -1,0 +1,106 @@
+body {
+  background: url("../images/plans-background.jpg") center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  max-width: 1200px;
+}
+
+section {
+  color: black;
+  max-width: 1200px;
+  border: 3px solid #8B6E6D;
+}
+
+.plus-plan-card {
+  margin: 130px 0 50px 0;
+  background: rgba(128, 128, 128, 0.9);
+  position: relative;
+  border-left: none;
+}
+
+.plus-plan-card h2,
+.premium-plan-card h2 {
+  padding: 0 0 0 20px;
+  margin: 20px 0;
+}
+
+section h2:first-child {
+  margin-top: 40px;
+}
+
+section p {
+  font-size: 20px;
+  background: white;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+.plus-plan-card p {
+  width: 95%;
+  margin: 0 0 30px 20px;
+}
+
+.plus-plan-card div {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 2px solid gray;
+  padding: 5px;
+  background: red;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+a[href="free-plan"] {
+  float: right;
+}
+
+.free-plan-card {
+  background: rgba(128, 128, 128, 0.9);
+  border-right: none; 
+  width: 1200px;
+}
+
+.free-plan-card h2 {
+  padding: 0 20px 0;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.free-plan-card p {
+  width: 96%;
+  margin: 0 auto 30px;
+  text-align: right;
+  border-right: none;
+}
+
+a[href="premium-plan"] {
+  text-decoration: none;
+  display: block;
+  max-width: 1200px;
+}
+
+.premium-plan-card {
+  margin: 320px 0 0 0;
+  background: rgba(139, 110, 109, 0.9);
+  border-left: none;
+  clear: both;
+}
+
+.premium-plan-card h2 {
+  color: #BABFBB;
+}
+
+.premium-plan-card h2:first-child {
+  color: white;
+}
+
+.premium-plan-card p {
+  width: 95%;
+  margin: 0 0 30px 20px;
+}

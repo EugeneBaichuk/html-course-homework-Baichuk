@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const surname = prompt('Введите вашу фамилию', 'Петренко');
+    const name = prompt('Введите ваше имя', 'Петр');
+    const patronymic = prompt('Введите ваше отчество', 'Петрович');
+    const age = +prompt('Введите ваш возраст (лет)', '20');
+    let gender = confirm ('Ваш пол мужской?');
+    let pension;
+
+    if (gender) {
+      gender = 'мужской';
+    } else {
+      gender = 'женский';
+    };
+
+    (age > 60) ? pension = "да" : pension = "нет";
+
+    alert(`
+    ваше ФИО: ${surname} ${name} ${patronymic}
+    ваш возраст в годах: ${age}
+    ваш возраст в днях: ${age * 365}
+    через 5 лет вам будет: ${age + 5}
+    ваш пол: ${gender}
+    вы на пенсии: ${pension}
+    `);
+  </script>
+  
+</body>
+
+</html>

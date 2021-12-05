@@ -1,0 +1,65 @@
+figure {
+  margin: 100px 0 0 0;
+}
+
+.john-figure {
+  margin: 50px 0 0 0;
+  clear: both;
+}
+
+figure img {
+  width: 1000px;
+}
+
+figcaption {
+  text-align: right;
+  float: right;
+  width: 500px;
+  padding: 250px 50px 250px 0;
+  margin: 0;
+}
+
+.john-figure figcaption {
+  float: left;
+  text-align: left;
+  padding: 250px 0 250px 50px;
+}
+
+.john-figure img {
+  float: right;
+}
+
+.john-figure div {
+  clear: both;
+}
+
+figcaption h2 {
+  color: #D83F2D;
+  margin: 0;
+  font-size: 30px;
+}
+
+figcaption p {
+  color: gray;
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+figcaption p:last-child {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 1550px) {
+  figcaption, .john-figure figcaption {
+    text-align: left;
+    float: none;
+    padding: 150px 50px;
+  }
+
+  .john-figure img {
+    float: none;
+  }
+}

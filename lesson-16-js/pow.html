@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+    // variant 1
+    function pow (x, n) {
+      let prodOfNum = 1;
+
+      if (n <= 0) {
+        console.log('Только положительное значение n');
+      } else {
+        for (let i = 1; i <= n; i++ ) {
+        prodOfNum *= x;
+        }
+
+        return prodOfNum;
+      }
+    }
+
+    console.log (pow (2, 4));
+   
+    // variant 2
+    function prod (x, n) {
+      return x**n;
+    }
+
+    console.log (prod (3, 4));
+
+    // variant 3
+    function powRecursive (x, n) {
+      if (n <= 0) {
+        console.log('Только положительное значение n');
+      } else {
+        return (n == 1) ? x : (x * powRecursive(x, n-1));
+      }
+    }
+
+    console.log (powRecursive (4, 4));
+</script>
+</body>
+</html>

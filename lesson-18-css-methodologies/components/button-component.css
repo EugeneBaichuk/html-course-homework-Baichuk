@@ -31,21 +31,14 @@
   margin: 0;
   max-width: 100%;
   color: var(--button-color);
-  
   font-size: 1.1875rem;
   font-family: var(--main-font);
   text-align: center;
   line-height: 2rem;
   text-decoration: none;
-  
   transform:translateY();
   will-change: transform;
   transition: 0.2s 0.1s ease;
-}
-
-.button_type_desctop {
-  margin: 1.25rem;
-
 }
 
 .button:hover {

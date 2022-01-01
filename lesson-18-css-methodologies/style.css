@@ -1,0 +1,23 @@
+@import url(./components/button-component.css);
+
+:root {
+  --nav-bg-color: #F4F4F4;
+}
+
+* {
+  margin: 0;
+}
+
+.nav {
+  background-color: var(--nav-bg-color);
+  width: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.button_type_desctop {
+  margin: 1.25rem;
+}
